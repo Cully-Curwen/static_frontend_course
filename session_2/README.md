@@ -1,14 +1,23 @@
-This evening we are going to cover: 
+## This evening we are going to cover: 
 
 => Selectors(+, ~, >)
+
 => pseudo classes
+
 => pseudo elements
+
 => absolute units
+
 => responsive units
+
 => media query
+
 => floating
+
 => positioning
+
 => normalizers
+
 => Mini project
 
 During this course, you will learn how to build proper layouts and a lot of CSS tricks.
@@ -17,17 +26,24 @@ In the world where everyone is trying to learn JS, React, Node, Ruby etc we hard
 
 After this course, you will be able to build well-structured layouts and have good CSS skills.
 
-Curriculum: 
+### Curriculum: 
 
 Session 1 – HTML Basics, CSS Basics Part 1
+
 Session 2 – CSS Basics Part 2, Mini project (homework - Project) 
+
 Session 3 – Project review 
+
+
 Session 4 – Wireframing
+
 Session 5 – HTML advance + practice
+
 Session 6 – CSS advance(homework - Final Project)
+
 Session 7 – Final Project - review
 
-Who we are:
+### Who we are:
 
 We started our community in 2018 in London, UK and now we are an international community with more than 2k members. Our community is for people who want to become developers and developers with experience who willing to help and mentor others.
 
