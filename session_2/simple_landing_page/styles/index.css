@@ -1,73 +1,76 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-    font-size: 14px;
-}
-
-/* Custom styles */
-@keyframes back_glow_pink {
-    0% { transform: translate(10%, 10%) scale(0.8); }
-    50% { transform: translate(-15%, -15%) scale(1.2); }
-    100% { transform: translate(10%, 10%) scale(0.8); }
-}
-
-@keyframes back_glow_blue {
-    0% { transform: translate(-10%, -10%) scale(0.8); }
-    50% { transform: translate(15%, 15%) scale(1.2); }
-    100% { transform: translate(-10%, -10%) scale(0.8); }
-}
-
-.content_area {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.main {
+    min-height: 80vh;
     background-color: #000;
-}
-
-.content_area__logo {
+    color: #fff;
     position: relative;
-    width: 150px;
-    height: 150px;
 }
 
-.content_area__logo img {
-    border-radius: 15px;
-    display: block;
-    left: 0;
-    margin: 0 auto;
+.main::before {
+    content: '';
     position: absolute;
     top: 0;
-    width: 150px;
-    z-index: 3;
-}
-
-
-.content_area__logo:before,
-.content_area__logo:after {
-    border-radius: 15px;
-    content: "";
-    filter: blur(40px);
-    height: 100%;
-    opacity: 0.5;
-    position: absolute;
+    left: 0;
+    display: block;
     width: 100%;
+    height: 100%;
+    background: url('../images/wave-1817646_1920.png') no-repeat center center;
 }
 
-.content_area__logo::after {
-    animation: back_glow_blue 3s ease infinite;
-    background-color: #0ff;
-    z-index: 1;
+nav {
+    overflow: auto;
+    padding: 0 5%;
 }
 
-.content_area__logo::before {
-    animation: back_glow_pink 3s ease infinite;
-    background-color: #a622ff;
-    z-index: 2;
+.main_navigation {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+    height: 70px;
+    float: right;
 }
 
-/* ======================== */
+.main_navigation li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    min-width: 100px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.main_navigation li:hover::after  {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: green;
+}
+
+.main_titles {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translate(0, -50%);
+}
+
+.main_titles h3 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.main_titles h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
